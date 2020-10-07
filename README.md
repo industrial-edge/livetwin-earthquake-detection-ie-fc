@@ -21,7 +21,7 @@ Running a simulation model on the edge device.
 This application example shows how to export Simulink virtual sensor model and run it on a edge device with LiveTwin edge application. The model can read data from PLC send the current status back to the PLC. 
 
 ### General task
-The main goal of this automation task is to create Simulink model that simulates shock sensor, export it in the required format and run it on the edge device using LiveTwin. The edge device can read data from PLC simulating vibrations via integrated S7 connector system application. The model can evaluate whether the vibrations have occurred and send the current shock status back to PLC. The data flow can be visualize in LiveTwin or by using Simatic Flow Creator application. 
+The main goal of this automation task is to create Simulink model that simulates shock sensor, export it in the required format and run it on the edge device using LiveTwin. The edge device can read data from PLC simulating vibrations via integrated S7 connector system application. The model can evaluate whether the vibrations have occurred and send the current shock status back to PLC. The data flow can be visualize in LiveTwin or by using Simatic Flow Creator application based on the LiveTwin project configuration. 
 
 
 
@@ -29,25 +29,31 @@ The main goal of this automation task is to create Simulink model that simulates
 
 ## 2 Requirements
 
+
+
 ### 2.1 Used components
-- Industrial Edge App Publisher V1.0.8
-- Docker Engine 18.09.6
-- Docker Compose V2.4
-- TIA Portal V16 
-- PLC: CPU 1511 FW 2.8.3
-- Industrial Edge Device 
-- S7 Connector V 1.0.22
-- S7 Connector Configurator V 1.0.9
+
 - Industrial Edge Device V 1.0.0-34
-- QR Code Scanner: SIMATIC MV320
+- PLC: CPU 1518
+- TIA Portal V16 
+- Matlab 2019
+- S7 Connector V 1.0.22 
+- S7 Connector Configurator V 1.0.9
+- Databus 
+- Databus configurator
+- Simatic Flow Creator V 1.0.4
+
+
 
 
 ## 3 Installation
 You can find the further information about the following steps in the [docs](docs/Installation.md)
-- Configure QR Code Scanner
-- Build application
-- Upload app to Industrial Edge Managment
-- Deploying application to Industrial Edge Device]
+- Export Simulink model 
+- Import the model to LiveTwin  
+- Configure the LiveTwin project properties
+- Configure S7 Connector 
+- Configure Databus 
+- Run the simulation 
 
 ## 4 Usage
 
