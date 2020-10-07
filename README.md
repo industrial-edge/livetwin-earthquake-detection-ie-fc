@@ -52,16 +52,18 @@ The main goal of this automation task is to create Simulink model that simulates
 - Simatic Flow Creator V 1.0.4
 
 
-
-
 ## Set up steps
 You can find the further information about the following steps in the [docs](docs/Installation.md)
 - Export Simulink model 
 - Import the model to LiveTwin  
-- Configure the LiveTwin project properties
+  - Create instance
+  - Create Flow Creator project
+- Configure the Flow Creator project properties
 - Configure S7 Connector 
 - Configure Databus 
 - Run the simulation 
+  - Visualize the data 
+  - Send shock status back to PLC
 
 ## Documentation
 - Here is a link to the [docs](docs/) of this application example.
