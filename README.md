@@ -1,6 +1,6 @@
 # LiveTwin application example 
 
-Running a simulation model on the edge device. 
+Running a simulation model on the edge device. Use Case App 5. 
 
 - [LiveTwin application example](# LiveTwin application example)
   - [1 Description](#Description)
@@ -19,10 +19,10 @@ Running a simulation model on the edge device.
 
 
 ###  Overview
-This application example shows how to export Simulink virtual sensor model and run it on a edge device with LiveTwin edge application. The model can read data from PLC send the current status back to the PLC. 
+This application example shows how to export Simulink virtual sensor model and run it on a edge device with LiveTwin edge application. The model can read data from PLC and send the current status back to the PLC. 
 
 ### General task
-The main goal of this automation task is to create Simulink model that simulates shock sensor, export it in the required format and run it on the edge device using LiveTwin. The edge device can read data from PLC simulating vibrations via integrated S7 connector system application. The model can evaluate whether the vibrations have occurred and send the current shock status back to PLC. The data flow can be visualize in LiveTwin or by using Simatic Flow Creator application based on the LiveTwin project configuration. 
+The main goal of this automation task is to create Simulink model that simulates shock sensor, export it in the required format and run it on the edge device using LiveTwin. The edge device can read data from PLC simulating vibrations via integrated S7 connector system application. The model can evaluate whether the vibrations have occurred and send the current shock status back to PLC. The data flow can be visualize by using Simatic Flow Creator application.
 
 
 
@@ -31,6 +31,13 @@ The main goal of this automation task is to create Simulink model that simulates
 ## Requirements
 
 ###  Prerequisities
+
+- Onboarded Edge device on IEM
+- Installed system configurators
+- Installed system applications
+- Installed LiveTwin and Simatic Flow Creator application
+- Edge device is connected to PLC 
+
 
 ### Used components
 
@@ -47,7 +54,7 @@ The main goal of this automation task is to create Simulink model that simulates
 
 
 
-## Installation
+## Set up steps
 You can find the further information about the following steps in the [docs](docs/Installation.md)
 - Export Simulink model 
 - Import the model to LiveTwin  
@@ -55,8 +62,6 @@ You can find the further information about the following steps in the [docs](doc
 - Configure S7 Connector 
 - Configure Databus 
 - Run the simulation 
-
-## Usage
 
 ## Documentation
 - Here is a link to the [docs](docs/) of this application example.
