@@ -7,7 +7,8 @@ Running a simulation model on the edge device.
     - [1.1 Overview](#11-Overview)
     - [1.2 General task](#12-General-task)
   - [2 Requirements](#2-Requirements)
-    - [2.1 Used components](#21-Used-components)
+    - [2.1 Prerequisities](#21-Prerequisities)
+    - [2.2 Used components](#22-Used-components)
   - [3 Installation](#3-Installation)
   - [4 Usage](#4-Usage)
   - [5 Documentation](#5-Documentation)
@@ -27,11 +28,11 @@ The main goal of this automation task is to create Simulink model that simulates
 
 ![](docs/graphics/livetwin_task.PNG)
 
-## 2 Requirements
+## Requirements
 
+###  Prerequisities
 
-
-### 2.1 Used components
+### Used components
 
 - Industrial Edge Device V 1.0.0-34
 - PLC: CPU 1518
@@ -46,7 +47,7 @@ The main goal of this automation task is to create Simulink model that simulates
 
 
 
-## 3 Installation
+## Installation
 You can find the further information about the following steps in the [docs](docs/Installation.md)
 - Export Simulink model 
 - Import the model to LiveTwin  
@@ -55,16 +56,16 @@ You can find the further information about the following steps in the [docs](doc
 - Configure Databus 
 - Run the simulation 
 
-## 4 Usage
+## Usage
 
-## 5 Documentation
+## Documentation
 - Here is a link to the [docs](docs/) of this application example.
 - You can find further documentation and help in the following links
   - [Industrial Edge Hub](https://iehub.eu1.edge.siemens.cloud/#/documentation)
   - [Industrial Edge Forum](https://www.siemens.com/industrial-edge-forum)
   - [Industrial Edge landing page](https://new.siemens.com/global/en/products/automation/topic-areas/industrial-edge/simatic-edge.html)
   
-## 6 Contribution
+## Contribution
 Thanks for your interest in contributing. Anybody is free to report bugs, unclear documenation, and other problems regarding this repository in the Issues section or, even better, is free to propose any changes to this repository using Merge Requests.
 
-## 7 Licence & Legal Information
+## Licence & Legal Information
