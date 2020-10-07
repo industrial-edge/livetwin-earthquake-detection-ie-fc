@@ -2,7 +2,7 @@
 
 Connecting a QR Code Scanner to an Industrial Edge Device
 
-- [LiveTwin application example](#LiveTwin application example)
+- [LiveTwin application example](# LiveTwin application example)
   - [1 Description](#Description)
     - [1.1 Overview](#11-Overview)
     - [1.2 General task](#12-General-task)
@@ -21,8 +21,7 @@ Connecting a QR Code Scanner to an Industrial Edge Device
 
 ### General task
 
-
-[//]: ![deploy VFC](docs/graphics/qrcode_task.png)
+![deploy VFC](docs/graphics/qrcode_task.png)
 
 ## 2 Requirements
 
