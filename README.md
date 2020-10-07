@@ -1,6 +1,6 @@
 # LiveTwin application example 
 
-Connecting a QR Code Scanner to an Industrial Edge Device
+Running a simulation model on the edge device. 
 
 - [LiveTwin application example](# LiveTwin application example)
   - [1 Description](#Description)
@@ -15,13 +15,17 @@ Connecting a QR Code Scanner to an Industrial Edge Device
   - [7 Licence & Legal Information](#7-Licence--Legal-Information)
 
 ## Description
+
+
 ###  Overview
-
-
+This application example shows how to export Simulink virtual sensor model and run it on a edge device with LiveTwin edge application. The model can read data from PLC send the current status back to the PLC. 
 
 ### General task
+The main goal of this automation task is to create Simulink model that simulates shock sensor, export it in the required format and run it on the edge device using LiveTwin. The edge device can read data from PLC simulating vibrations via integrated S7 connector system application. The model can evaluate whether the vibrations have occurred and send the current shock status back to PLC. The data flow can be visualize in LiveTwin or by using Simatic Flow Creator application. 
 
-![deploy VFC](docs/graphics/qrcode_task.png)
+
+
+![deploy VFC](docs/graphics/livetwin_task.png)
 
 ## 2 Requirements
 
