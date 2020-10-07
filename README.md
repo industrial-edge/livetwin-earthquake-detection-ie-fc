@@ -25,7 +25,7 @@ The main goal of this automation task is to create Simulink model that simulates
 
 
 
-![deploy VFC](docs/graphics/livetwin_task.png)
+![](docs/graphics/livetwin_task.png)
 
 ## 2 Requirements
 
