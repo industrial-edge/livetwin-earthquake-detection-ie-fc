@@ -14,3 +14,12 @@
 
 
 ## Export Simulink model 
+
+To export Simulink model and run it on edge device you have to follow these steps: 
+
+1) Open your simulink project. 
+
+
+ 
+
+
