@@ -52,7 +52,7 @@ The main goal of this automation task is to create Simulink model that simulates
 - Simatic Flow Creator V 1.0.4
 
 
-## Set up steps
+## Installation steps
 You can find the further information about the following steps in the [docs](docs/Installation.md)
 - Export Simulink model 
 - Import the model to LiveTwin  
