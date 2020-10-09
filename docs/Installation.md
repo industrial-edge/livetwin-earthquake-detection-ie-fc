@@ -54,5 +54,15 @@ To export Simulink model and run it on edge device you have to follow these step
 
 ![](docs/graphics/interface_advanced.PNG)
 
-7) Go to the "Hardware Implementation"  
+7) Go to the "Hardware Implementation" and do the following: 
+  - In the "Device vendor" option choose "Intel"
+  - Activate "Support long long" checkbox
+  - Activate "Test hardware in the same as production hardware"
 
+![](docs/graphics/hardware.PNG)
+
+8) Click "Ok" and then in the "Generate Code" drop down list select "Build"
+
+![](docs/graphics/build.PNG)
+
+9) The .zip file is created and prepared for import to LiveTwin 
