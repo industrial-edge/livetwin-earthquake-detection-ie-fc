@@ -26,7 +26,7 @@ The main goal of this automation task is to create Simulink model that simulates
 
 
 
-![](docs/graphics/livetwin_task.PNG)
+![](docs/graphics/livetwin_task.PNG | width=100)
 
 ## Requirements
 
