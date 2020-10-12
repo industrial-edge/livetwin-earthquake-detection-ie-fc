@@ -1,7 +1,7 @@
 # LiveTwin application example 
 
-- [LiveTwin application example](# LiveTwin application example)
-  - [1 Export Simulink model ](#Export_Simulink_model)
+- [LiveTwin application example](#liveTwin-application-example)
+  - [1 Export Simulink model ](#export-simulink-model)
   - [2 Import the model to LiveTwin ](#2-Import)
     - [2.1 Create template](#21-Instance)
     - [2.2 Create Flow Creator project](#22-Flow-Creator-project)
