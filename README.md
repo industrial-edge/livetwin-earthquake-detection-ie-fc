@@ -2,18 +2,17 @@
 
 Running a simulation model on the edge device. Use Case App 5. 
 
-- [LiveTwin application example](# LiveTwin application example)
-  - [1 Description](#Description)
-    - [1.1 Overview](#11-Overview)
-    - [1.2 General task](#12-General-task)
-  - [2 Requirements](#2-Requirements)
-    - [2.1 Prerequisities](#21-Prerequisities)
-    - [2.2 Used components](#22-Used-components)
-  - [3 Installation](#3-Installation)
-  - [4 Usage](#4-Usage)
-  - [5 Documentation](#5-Documentation)
-  - [6 Contribution](#6-Contribution)
-  - [7 Licence & Legal Information](#7-Licence--Legal-Information)
+- [LiveTwin application example](#livetwin-application-example)
+  - [Description](#description)
+    - [Overview](#overview)
+    - [General task](#general-task)
+  - [Requirements](#requirements)
+    - [Prerequisities](#prerequisities)
+    - [Used components](#used-components)
+  - [Installation steps](#installation-steps)
+  - [Documentation](#documentation)
+  - [Contribution](#contribution)
+  - [Licence & Legal Information](#licence--legal-information)
 
 ## Description
 
