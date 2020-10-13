@@ -1,16 +1,12 @@
 # LiveTwin application example 
 
-- [LiveTwin application example](# LiveTwin application example)
-  - [1 Export Simulink model ](#Export_Simulink_model)
-  - [2 Import the model to LiveTwin ](#2-Import)
-    - [2.1 Create template](#21-Instance)
-    - [2.2 Create Flow Creator project](#22-Flow-Creator-project)
-  - [3 Configure the Flow Creator project properties](#3-Configure-project)
-  - [4 Configure S7 Connector ](#4-S7-Connector)
-  - [5 Configure Databus](#5-Databus)
-  - [6 Simulation](#6-Simulation)
-    - [6.1 Visualize the data ](#7-Vizualization)
-    - [6.2 Send shock status back to PLC](#7-Sending-shock-status)
+
+
+- [LiveTwin application example](#livetwin-application-example)
+  - [Export Simulink model](#export-simulink-model)
+  - [Import the model to LiveTwin](#import-the-model-to-livetwin)
+    - [Create template](#create-template)
+    - [Create Flow Creator project](#create-flow-creator-project)
 
 
 ## Export Simulink model 
@@ -40,7 +36,7 @@ To export Simulink model and run it on edge device you have to follow these step
   - Select the "Toolchain"
 
 
-![](docs/graphics/code_genPNG)
+![](docs/graphics/code_gen.PNG)
  
 6) Go to the "Interface" option in the "Code Generation" section and select: 
   - Activate all checkboxes in the "Generate C API" option
