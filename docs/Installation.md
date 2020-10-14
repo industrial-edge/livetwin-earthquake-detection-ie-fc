@@ -81,7 +81,7 @@ To export Simulink model and run it on edge device you have to follow these step
 
 <img src="docs/graphics/plus_button.PNG"/>
 
-1) Navigate to the "New Template" are and fill the form: 
+1) Navigate to the "New Template" area and fill the form: 
   - Choose a "Name" for your template
   - Select the "Model Type" (in this case Simulink)
   - Browse in the"Model File" for the exported .zip file of the Simuling project.
@@ -90,9 +90,26 @@ To export Simulink model and run it on edge device you have to follow these step
 
 4) Click "Save". The new template is generated. 
 
-  
-
 ### Create Flow Creator project 
+
+1) Go to the "Projects" section in the "LiveTwin studio" menu and click on the "plus" button to add project. 
+
+2) Navigate to the "New Project" area and fill the following information:
+  - Select your "Template"
+  - Select "FLow Creator" as a "Project Type"
+  - Give the project a name 
+  - Choose "Simulation Step" and "Project Cyclic Time" based on your reguirement
+
+3) Click "Save&Close". The new Flow Creator project is created. 
+
+
+
+
+
+
+
+
+
 
 
 
