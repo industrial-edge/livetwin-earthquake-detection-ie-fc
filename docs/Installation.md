@@ -22,7 +22,7 @@ To export Simulink model and run it on edge device you have to follow these step
 1) Go to the "Apps" Section in the top menu and select "Simulink Coder". New tap opens. 
 
 
-<img src="docs/graphics/point2.PNG" width="400"/>
+<img src="docs/graphics/point2.PNG" width="900"/>
 
 1) Go to the "CODE" tab and in the "Generic C Code" section choose "Generic C++ code". 
 
@@ -36,14 +36,13 @@ To export Simulink model and run it on edge device you have to follow these step
   - Optional: "Zip file name"
   - Select the "Toolchain"
 
-
-![](docs/graphics/code_gen.PNG)
+<img src="docs/graphics/code_gen.PNG" width="700"/>
  
-6) Go to the "Interface" option in the "Code Generation" section and select: 
+1) Go to the "Interface" option in the "Code Generation" section and select: 
   - Activate all checkboxes in the "Generate C API" option
 
 
-![](docs/graphics/interface.PNG)
+<img src="docs/graphics/interface.PNG" width="700"/>
 
   - For Advanced parameters: 
     - Disable "MAT-file logging"
@@ -51,7 +50,7 @@ To export Simulink model and run it on edge device you have to follow these step
 
 ![](docs/graphics/interface_advanced.PNG)
 
-7) Go to the "Hardware Implementation" and do the following: 
+1) Go to the "Hardware Implementation" and do the following: 
   - In the "Device vendor" option choose "Intel"
   - Activate "Support long long" checkbox
   - Activate "Test hardware in the same as production hardware"
