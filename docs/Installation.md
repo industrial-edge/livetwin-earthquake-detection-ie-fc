@@ -17,13 +17,14 @@ To export Simulink model and run it on edge device you have to follow these step
 
 1) Open your simulink project. 
 
-<img src="docs/graphics/Project.PNG" width="400"/>
+<img src="docs/graphics/Project.PNG" width="1000"/>
 
 1) Go to the "Apps" Section in the top menu and select "Simulink Coder". New tap opens. 
 
-![](docs/graphics/point2.PNG)
 
-3) Go to the "CODE" tab and in the "Generic C Code" section choose "Generic C++ code". 
+<img src="docs/graphics/point2.PNG" width="400"/>
+
+1) Go to the "CODE" tab and in the "Generic C Code" section choose "Generic C++ code". 
 
 ![](docs/graphics/point02.PNG)
 
