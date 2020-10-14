@@ -48,16 +48,19 @@ To export Simulink model and run it on edge device you have to follow these step
     - Disable "MAT-file logging"
 
 
-![](docs/graphics/interface_advanced.PNG)
+<img src="docs/graphics/interface_advanced.PNG" width="700"/>
+
 
 1) Go to the "Hardware Implementation" and do the following: 
   - In the "Device vendor" option choose "Intel"
   - Activate "Support long long" checkbox
   - Activate "Test hardware in the same as production hardware"
 
-![](docs/graphics/hardware.PNG)
 
-8) Click "Ok" and then in the "Generate Code" drop down list select "Build"
+<img src="docs/graphics/hardware.PNG" width="700"/>
+
+
+1) Click "Ok" and then in the "Generate Code" drop down list select "Build"
 
 ![](docs/graphics/build.PNG)
 
