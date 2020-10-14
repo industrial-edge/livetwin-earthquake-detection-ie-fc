@@ -70,23 +70,27 @@ To export Simulink model and run it on edge device you have to follow these step
 ## Import the model to LiveTwin 
 
 *Prerequisities:*
- - *LiveTwin and Flow Creator application is running on edge device*
+ - *LiveTwin and Flow Creator applications are running on edge device*
 
 
 
 ### Create template
-1) Go to the "LiveTwin studio" section located in the left the menu 
+1) Open LiveTwin UI and go to the "LiveTwin studio" section located in the left the menu 
 
 2) Go to the Libraries are and click on the "plus" button to add a template. New tab pop up in the working area. 
 
-3) Navigate to the "New Template" are and fill the form: 
+<img src="docs/graphics/plus_button.PNG"/>
+
+1) Navigate to the "New Template" are and fill the form: 
   - Choose a "Name" for your template
   - Select the "Model Type" (in this case Simulink)
   - Browse in the"Model File" for the exported .zip file of the Simuling project.
 
+<img src="docs/graphics/new_template.PNG" width="600"/>
 
 4) Click "Save". The new template is generated. 
- 
+
+  
 
 ### Create Flow Creator project 
 
