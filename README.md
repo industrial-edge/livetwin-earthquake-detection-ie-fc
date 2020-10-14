@@ -24,9 +24,8 @@ This application example shows how to export Simulink virtual sensor model and r
 The main goal of this automation task is to create Simulink model that simulates shock sensor, export it in the required format and run it on the edge device using LiveTwin. The edge device can read data from PLC simulating vibrations via integrated S7 connector system application. The model can evaluate whether the vibrations have occurred and send the current shock status back to PLC. The data flow can be visualize by using Simatic Flow Creator application.
 
 
+<img src="docs/graphics/livetwin_task.PNG" width="400"/>
 
-![](docs/graphics/livetwin_task.PNG =50x)
-<img src="docs/graphics/livetwin_task.PNG" alt="drawing" width="200"/>
 ## Requirements
 
 ###  Prerequisities

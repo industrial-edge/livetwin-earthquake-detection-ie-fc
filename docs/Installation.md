@@ -17,9 +17,9 @@ To export Simulink model and run it on edge device you have to follow these step
 
 1) Open your simulink project. 
 
-![](docs/graphics/Project.PNG)
+<img src="docs/graphics/Project.PNG" width="400"/>
 
-2) Go to the "Apps" Section in the top menu and select "Simulink Coder". New tap opens. 
+1) Go to the "Apps" Section in the top menu and select "Simulink Coder". New tap opens. 
 
 ![](docs/graphics/point2.PNG)
 
