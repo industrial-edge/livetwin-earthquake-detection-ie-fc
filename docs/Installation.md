@@ -85,7 +85,7 @@ To export Simulink model and run it on edge device you have to follow these step
 3) Navigate to the "New Template" area and fill the form: 
   - Choose a "Name" for your template
   - Select the "Model Type" (in this case Simulink)
-  - Browse in the"Model File" for the exported .zip file of the Simuling project.
+  - Browse in the"Model File" for the exported .zip file of the Simuling project. You can find it here: [livetwin template](shock_sensor.zip)
 
 <img src="docs/graphics/new_template.PNG" width="600"/>
 
@@ -113,7 +113,7 @@ To export Simulink model and run it on edge device you have to follow these step
 7) Click "Save&Close". The new Flow Creator project is created. 
 
 
-## Simulation
+## Simulation configuration
 
 1) Go to the "Flow Creator" section of the main menu. The Flow Creator application opens. 
 
@@ -157,7 +157,7 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 <img src="docs/graphics/s7node.PNG" width="400"/>
 
-12) You can also add additouional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. The flow is available in here: 
+12) You can also add additouional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. The flow is available in here: [Flow Creator Project](flows.json).
 
 
 
