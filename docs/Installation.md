@@ -6,7 +6,7 @@
   - [Import the model to LiveTwin](#import-the-model-to-livetwin)
     - [Create template](#create-template)
     - [Create Flow Creator project](#create-flow-creator-project)
-    - [Simulation](#simulation)
+  - [Simulation](#simulation)
 
 
 
@@ -108,12 +108,12 @@ To export Simulink model and run it on edge device you have to follow these step
 
 <img src="docs/graphics/new_project.PNG" width="600"/>
 
- *Note: The "inputs" name will be used in Flow Creator as inputs to "LiveTwin" node.*  
+ *Note: The "inputs" names will be used in Flow Creator as inputs to "LiveTwin" node.*  
+
 3) Click "Save&Close". The new Flow Creator project is created. 
 
 
-
-### Simulation
+## Simulation
 
 1) Go to the "Flow Creator" section of the main menu. The Flow Creator application opens. 
 
@@ -123,10 +123,33 @@ To export Simulink model and run it on edge device you have to follow these step
   - In the "Model" section, select your template
   - Adjust other properties based on your needs. For this case, you can leave idefault. 
 
+<img src="docs/graphics/edit_livetwin_node.PNG" width="600"/>
+
 4) Click "Done". 
 
-5) 
+5) Now we need to read values from PLC and set them as inputs to LiveTwin node. To do that we have several options: 
+  -  Recieve the data from databus using S7 connector system application
+  -  Recieve the data directly in Flow Creator using different protocols (see: https://code.siemens.com/industrial-edge-sup/how-to-s/flowcreator-connectivity)
+  
+ For this case we will recieve the data from PLC using S7 communication directly from Flow Creator using "S7 in" node. 
 
+6) Search for the "S7 in" node and drop it in the flow. Double click on the node.
+
+7) In the "Properties" section click on the PLC configure button.
+
+8) In the "Connection" menu do the following steps: 
+  - Type IP adress of your PLC in the "Adress" section
+  - Change "Rack" and "Slot" properties 
+  - Configure "Cycle time" based on your needs
+
+<img src="docs/graphics/S7node_connection.PNG" width="600"/>
+
+9) Go to "Variables" section and define variables based on tags in TIA portal
+  
+<img src="docs/graphics/S7node_variables.PNG" width="600"/>
+
+
+The syntax for the address of the variable contains the datablock. See the [documentation]([docs/Installation.md](https://www.npmjs.com/package/node-red-contrib-s7)) for more information. 
 
 
 

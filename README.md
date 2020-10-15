@@ -35,6 +35,7 @@ The main goal of this automation task is to create Simulink model that simulates
 - Installed system applications
 - Installed LiveTwin and Simatic Flow Creator application
 - Edge device is connected to PLC 
+- TIA portal project downloaded to PLC ()
 
 
 ### Used components
