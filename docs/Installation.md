@@ -123,7 +123,7 @@ To export Simulink model and run it on edge device you have to follow these step
   - In the "Model" section, select your template
   - Adjust other properties based on your needs. For this case, you can leave idefault. 
 
-<img src="docs/graphics/edit_livetwin_node.PNG" width="600"/>
+<img src="docs/graphics/edit_livetwin_node.PNG" width="400"/>
 
 4) Click "Done". 
 
@@ -142,11 +142,11 @@ To export Simulink model and run it on edge device you have to follow these step
   - Change "Rack" and "Slot" properties 
   - Configure "Cycle time" based on your needs
 
-<img src="docs/graphics/S7node_connection.PNG" width="600"/>
+<img src="docs/graphics/S7node_connection.PNG" width="500"/>
 
 9) Go to "Variables" section and define variables based on tags in TIA portal
   
-<img src="docs/graphics/S7node_variables.PNG" width="600"/>
+<img src="docs/graphics/S7node_variables.PNG" width="500"/>
 
 
 The syntax for the address of the variable contains the datablock, offset and data type. See the [documentation](https://www.npmjs.com/package/node-red-contrib-s7) for more information. 
@@ -155,7 +155,7 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 11) In the "Mode" section select "All variables" from the dropdown list and click "Done". 
 
-<img src="docs/graphics/s7node.PNG" width="600"/>
+<img src="docs/graphics/s7node.PNG" width="400"/>
 
 12) You can also add additouional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. The flow is available in here: 
 
