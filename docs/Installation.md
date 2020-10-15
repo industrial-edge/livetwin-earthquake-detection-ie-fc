@@ -149,7 +149,7 @@ To export Simulink model and run it on edge device you have to follow these step
 <img src="docs/graphics/S7node_variables.PNG" width="600"/>
 
 
-The syntax for the address of the variable contains the datablock. See the [documentation]([docs/Installation.md](https://www.npmjs.com/package/node-red-contrib-s7)) for more information. 
+The syntax for the address of the variable contains the datablock. See the [documentation](https://www.npmjs.com/package/node-red-contrib-s7) for more information. 
 
 
 
