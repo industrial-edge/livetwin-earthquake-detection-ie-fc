@@ -157,9 +157,20 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 <img src="docs/graphics/s7node.PNG" width="400"/>
 
-12) You can also add additouional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. The flow is available in here: [Flow Creator Project](flows.json).
+12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. The flow is available in here: [Flow-Creator-Project](flows.json).
 
 
+## Run simulation
+
+1)To run the simulation, open the Flow Creator and follow these instructions: 
+ - Deploy the application 
+ - Make sure that PLC is connected 
+ - Click on the trigger button of "LiveTwin" node to start the simulation
+ - Access the Flow Creator dashboard to see the results
+
+
+<img src="docs/graphics/flow.PNG" width="400"/>
+<img src="docs/graphics/dashboard.PNG" width="400"/>
 
 
 
