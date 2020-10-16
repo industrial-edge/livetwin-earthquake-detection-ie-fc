@@ -147,7 +147,7 @@ To export Simulink model and run it on edge device you have to follow these step
 
 <img src="docs/graphics/S7node_connection.PNG" width="500"/>
 
-9) Go to "Variables" section and define variables based on tags in TIA portal. Make sure thet the name of the variables are the same as inputs of the simulink model. 
+9) Go to "Variables" section and define variables based on tags in TIA portal. Make sure that the name of the variables are the same as inputs of the simulink model. 
   
 <img src="docs/graphics/S7node_variables.PNG" width="500"/>
 
