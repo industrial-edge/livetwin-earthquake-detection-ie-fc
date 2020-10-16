@@ -6,7 +6,8 @@
   - [Import the model to LiveTwin](#import-the-model-to-livetwin)
     - [Create template](#create-template)
     - [Create Flow Creator project](#create-flow-creator-project)
-  - [Simulation](#simulation)
+  - [Simulation configuration](#simulation-configuration)
+  - [Run simulation](#run-simulation)
 
 
 
@@ -18,20 +19,22 @@ To export Simulink model and run it on edge device you have to follow these step
 
 1) Open your simulink project. 
 
-<img src="docs/graphics/Project.PNG" width="1000"/>
+<img src="docs/graphics/Project.PNG" width="800"/>
 
 2) Go to the "Apps" Section in the top menu and select "Simulink Coder". New tap opens. 
 
 
-<img src="docs/graphics/point2.PNG" width="900"/>
+<img src="docs/graphics/point2.PNG" width="600"/>
 
 3) Go to the "CODE" tab and in the "Generic C Code" section choose "Generic C++ code". 
 
-![](docs/graphics/point02.PNG)
 
-4) Go to "Settings", new window with configuration parameters opens. 
 
-5) Click on "Code Generation" section and select the folowing options: 
+<img src="docs/graphics/point02.PNG" width="500"/>
+
+1) Go to "Settings", new window with configuration parameters opens. 
+
+2) Click on "Code Generation" section and select the folowing options: 
   - Activate "Generate code only"
   - "Activate Package code and artifacts"
   - Optional: "Zip file name"
