@@ -17,7 +17,7 @@
 
 To export Simulink model and run it on edge device you have to follow these steps: 
 
-1) Open your simulink project. 
+1) Open your simulink project (you can find it here: [simulink](../src/Siemens_Shock_discrete_exp.slx)) 
 
 <img src="docs/graphics/Project.PNG" width="800"/>
 
@@ -88,7 +88,7 @@ To export Simulink model and run it on edge device you have to follow these step
 3) Navigate to the "New Template" area and fill the form: 
   - Choose a "Name" for your template
   - Select the "Model Type" (in this case Simulink)
-  - Browse in the"Model File" for the exported .zip file of the Simuling project. You can find it here: [livetwin template](shock_sensor.zip)
+  - Browse in the"Model File" for the exported .zip file of the Simuling project. You can find it here: [livetwin template](src/shock_sensor.zip)
 
 <img src="docs/graphics/new_template.PNG" width="600"/>
 
@@ -132,7 +132,7 @@ To export Simulink model and run it on edge device you have to follow these step
 
 5) Now we need to read values from PLC and set them as inputs to LiveTwin node. To do that we have several options: 
   -  Recieve the data from databus using S7 connector system application
-  -  Recieve the data directly in Flow Creator using different protocols (see: https://code.siemens.com/industrial-edge-sup/how-to-s/flowcreator-connectivity)
+  -  Recieve the data directly in Flow Creator using different protocols (see:  [connectivity](https://code.siemens.com/industrial-edge-sup/how-to-s/flowcreator-connectivity))
   
  For this case we will recieve the data from PLC using S7 communication directly from Flow Creator using "S7 in" node. 
 
@@ -160,7 +160,7 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 <img src="docs/graphics/s7node.PNG" width="400"/>
 
-12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. The flow is available in here: [Flow-Creator-Project](flows.json).
+12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. The flow is available in here: [Flow-Creator-Project](src/flows.json).
 
 
 ## Run simulation
