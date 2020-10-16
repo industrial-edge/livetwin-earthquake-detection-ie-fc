@@ -32,11 +32,11 @@ To export Simulink model and run it on edge device you have to follow these step
 
 <img src="docs/graphics/point02.PNG" width="500"/>
 
-1) Go to "Settings", new window with configuration parameters opens. 
+4) Go to "Settings", new window with configuration parameters opens. 
 
-2) Click on "Code Generation" section and select the folowing options: 
+5) Click on "Code Generation" section and select the folowing options: 
   - Activate "Generate code only"
-  - "Activate Package code and artifacts"
+  - Activate "Package code and artifacts"
   - Optional: "Zip file name"
   - Select the "Toolchain"
 
@@ -79,7 +79,7 @@ To export Simulink model and run it on edge device you have to follow these step
 
 
 ### Create template
-1) Open LiveTwin UI and go to the "LiveTwin studio" section located in the left the menu 
+1) Open LiveTwin UI and go to the "LiveTwin studio" section located in the left main menu 
 
 2) Go to the Libraries are and click on the "plus" button to add a template. New tab pop up in the working area. 
 
@@ -109,7 +109,7 @@ To export Simulink model and run it on edge device you have to follow these step
   - Choose "Simulation Step" and "Project Cyclic Time" based on your reguirement
 
 
-<img src="docs/graphics/new_project.PNG" width="600"/>
+<img src="docs/graphics/new_project.PNG" width="800"/>
 
  *Note: The "inputs" names will be used in Flow Creator as inputs to "LiveTwin" node.*  
 
@@ -130,7 +130,7 @@ To export Simulink model and run it on edge device you have to follow these step
 
 4) Click "Done". 
 
-5) Now we need to read values from PLC and set them as inputs to LiveTwin node. To do that we have several options: 
+5) Now we need to read values from PLC (TIA project: [project](src/shock_sensor.zip)) and set them as inputs to LiveTwin node. To do that we have several options: 
   -  Recieve the data from databus using S7 connector system application
   -  Recieve the data directly in Flow Creator using different protocols (see:  [connectivity](https://code.siemens.com/industrial-edge-sup/how-to-s/flowcreator-connectivity))
   
@@ -147,7 +147,7 @@ To export Simulink model and run it on edge device you have to follow these step
 
 <img src="docs/graphics/S7node_connection.PNG" width="500"/>
 
-9) Go to "Variables" section and define variables based on tags in TIA portal
+9) Go to "Variables" section and define variables based on tags in TIA portal. Make sure thet the name of the variables are the same as inputs of the simulink model. 
   
 <img src="docs/graphics/S7node_variables.PNG" width="500"/>
 
