@@ -19,18 +19,18 @@ To export Simulink model and run it on edge device you have to follow these step
 
 1) Open your simulink project (you can find it here: [simulink](../src/Siemens_Shock_discrete_exp.slx)) 
 
-<img src="docs/graphics/Project.PNG" width="800"/>
+<img src="docs/graphics/Project.PNG" width="700"/>
 
 2) Go to the "Apps" Section in the top menu and select "Simulink Coder". New tap opens. 
 
 
-<img src="docs/graphics/point2.PNG" width="600"/>
+<img src="docs/graphics/point2.PNG" width="500"/>
 
 3) Go to the "CODE" tab and in the "Generic C Code" section choose "Generic C++ code". 
 
 
 
-<img src="docs/graphics/point02.PNG" width="500"/>
+<img src="docs/graphics/point02.PNG" width="400"/>
 
 4) Go to "Settings", new window with configuration parameters opens. 
 
@@ -40,19 +40,19 @@ To export Simulink model and run it on edge device you have to follow these step
   - Optional: "Zip file name"
   - Select the "Toolchain"
 
-<img src="docs/graphics/code_gen.PNG" width="700"/>
+<img src="docs/graphics/code_gen.PNG" width="600"/>
  
 6) Go to the "Interface" option in the "Code Generation" section and select: 
   - Activate all checkboxes in the "Generate C API" option
 
 
-<img src="docs/graphics/interface.PNG" width="700"/>
+<img src="docs/graphics/interface.PNG" width="600"/>
 
   - For Advanced parameters: 
     - Disable "MAT-file logging"
 
 
-<img src="docs/graphics/interface_advanced.PNG" width="700"/>
+<img src="docs/graphics/interface_advanced.PNG" width="600"/>
 
 
 7) Go to the "Hardware Implementation" and do the following: 
@@ -61,7 +61,7 @@ To export Simulink model and run it on edge device you have to follow these step
   - Activate "Test hardware in the same as production hardware"
 
 
-<img src="docs/graphics/hardware.PNG" width="700"/>
+<img src="docs/graphics/hardware.PNG" width="600"/>
 
 
 8) Click "Ok" and then in the "Generate Code" drop down list select "Build"
@@ -109,7 +109,7 @@ To export Simulink model and run it on edge device you have to follow these step
   - Choose "Simulation Step" and "Project Cyclic Time" based on your reguirement
 
 
-<img src="docs/graphics/new_project.PNG" width="800"/>
+<img src="docs/graphics/new_project.PNG" width="700"/>
 
  *Note: The "inputs" names will be used in Flow Creator as inputs to "LiveTwin" node.*  
 
@@ -160,7 +160,7 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 <img src="docs/graphics/s7node.PNG" width="400"/>
 
-12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. The flow is available in here: [Flow-Creator-Project](src/flows.json).
+12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. You can also send current shock status back to PLC. The flow is available in here: [Flow-Creator-Project](src/flows.json).
 
 
 ## Run simulation
