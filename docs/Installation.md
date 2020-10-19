@@ -118,6 +118,8 @@ To export Simulink model and run it on edge device you have to follow these step
 
 ## Simulation configuration
 
+*Note: The flow.json file is available in the repository.*
+
 1) Go to the "Flow Creator" section of the main menu. The Flow Creator application opens. 
 
 2) Search for "LiveTwin" node, drag and drop it in the flow. 
@@ -160,16 +162,18 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 <img src="docs/graphics/s7node.PNG" width="400"/>
 
-12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. You can also send current shock status back to PLC. The flow is available in here: [Flow-Creator-Project](src/flows.json).
+12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. You can also send current shock status back to PLC. The created flow is available in here: [Flow-Creator-Project](src/flows.json). 
 
 
 ## Run simulation
 
-1)To run the simulation, open the Flow Creator and follow these instructions: 
- - Deploy the application 
- - Make sure that PLC is connected 
+1)To run the simulation, open the Flow Creator with the imported flow and follow these instructions: 
+ - Deploy the Flow Creator application [Flow-Creator-Project](src/flows.json)
+ - Make sure that PLC is connected and TIA project is downloaded ([TIA project](../src/Shock_detection1500.zip))
  - Click on the trigger button of "LiveTwin" node to start the simulation
+ - Enable vibrations on the PLC ("HMIHandleDB" -> "enableVib" -> "True")
  - Access the Flow Creator dashboard to see the results
+
 
 
 <img src="docs/graphics/flow.PNG" width="400"/>

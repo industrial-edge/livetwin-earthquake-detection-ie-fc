@@ -35,7 +35,7 @@ The main goal of this automation task is to create Simulink model that simulates
 - Installed system applications
 - Installed LiveTwin and Simatic Flow Creator application
 - Edge device is connected to PLC 
-- TIA portal project downloaded to PLC ()
+- TIA portal project downloaded to PLC ([TIA project](src/Shock_detection1500.zip))
 
 
 ### Used components
@@ -43,11 +43,11 @@ The main goal of this automation task is to create Simulink model that simulates
 - Industrial Edge Device V 1.0.0-34
 - PLC: CPU 1518
 - TIA Portal V16 
-- Matlab 2019
+- Matlab 2019b
 - S7 Connector V 1.0.22 
 - S7 Connector Configurator V 1.0.9
-- Databus 
-- Databus configurator
+- Databus V 1.0.11
+- Databus configurator V 1.0.9
 - Simatic Flow Creator V 1.0.4
 
 
