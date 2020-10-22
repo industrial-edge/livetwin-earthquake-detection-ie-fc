@@ -75,4 +75,4 @@ You can find the further information about the following steps in the [docs](doc
 Thanks for your interest in contributing. Anybody is free to report bugs, unclear documenation, and other problems regarding this repository in the Issues section or, even better, is free to propose any changes to this repository using Merge Requests.
 
 ## Licence & Legal Information
-Please read the [Legal information](Legal_information.md)
+Please read the [Legal information](LICENSE.md)
