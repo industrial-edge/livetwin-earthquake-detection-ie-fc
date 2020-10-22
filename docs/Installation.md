@@ -115,9 +115,11 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 ## Run simulation
 
-1)To run the simulation, open the Flow Creator with the imported flow and follow these instructions: 
- - Deploy the Flow Creator application [Flow-Creator-Project](src/flows.json)
- - Make sure that PLC is connected and TIA project is downloaded ([TIA project](../src/Shock_detection1500.zip))
+1)To run the simulation follow these instructions:  
+ - Make sure that PLC is connected to the Edge device and TIA project is downloaded ([TIA project](../src/Shock_detection1500.zip))
+ - Import the flow project to the Flow Creator application [Flow-Creator-Project](src/flows.json)
+ - Configure the flow as instructed here: [Simulation configuration](simulation-configuration)
+ - Deploy the Flow Creator application 
  - Click on the trigger button of "LiveTwin" node to start the simulation
  - Enable vibrations on the PLC ("HMIHandleDB" -> "enableVib" -> "True")
  - Access the Flow Creator dashboard to see the results
