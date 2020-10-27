@@ -51,7 +51,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 4) Click "Save". The new template is generated. 
 
-### Create Flow Creator project 
+### Create Flow Creator project in LiveTwin
 
 1) Go to the "Projects" section in the "LiveTwin studio" menu and click on the "plus" button to add project. 
 
