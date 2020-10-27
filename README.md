@@ -44,10 +44,6 @@ The main goal of this automation task is to create Simulink model that simulates
 - PLC: CPU 1518
 - TIA Portal V16 
 - Matlab 2019b
-- S7 Connector V 1.0.22 
-- S7 Connector Configurator V 1.0.9
-- Databus V 1.0.11
-- Databus configurator V 1.0.9
 - Simatic Flow Creator V 1.0.4
 
 
@@ -58,8 +54,6 @@ You can find the further information about the following steps in the [docs](doc
   - Create instance
   - Create Flow Creator project
 - Configure the Flow Creator project properties
-- Configure S7 Connector 
-- Configure Databus 
 - Run the simulation 
   - Visualize the data 
   - Send shock status back to PLC
