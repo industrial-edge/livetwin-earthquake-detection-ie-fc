@@ -1,8 +1,8 @@
-# LiveTwin application example 
+# Simulating virtual sensor with LiveTwin
 
-Running a simulation model on the edge device. Use Case App 5. 
+Running a simulation model on the edge device using Siemens app LiveTwin. 
 
-- [LiveTwin application example](#livetwin-application-example)
+- [Simulating virtual sensor with LiveTwin](#simulating-virtual-sensor-with-livetwin)
   - [Description](#description)
     - [Overview](#overview)
     - [General task](#general-task)
@@ -21,7 +21,7 @@ Running a simulation model on the edge device. Use Case App 5.
 This application example shows how to export Simulink virtual sensor model and run it on a edge device with LiveTwin edge application. The model can read data from PLC and send the current status back to the PLC. 
 
 ### General task
-The main goal of this automation task is to create Simulink model that simulates shock sensor, export it in the required format and run it on the edge device using LiveTwin. The edge device can read data from PLC simulating vibrations via integrated S7 connector system application. The model can evaluate whether the vibrations have occurred and send the current shock status back to PLC. The data flow can be visualize by using Simatic Flow Creator application.
+The main goal of this automation task is to create Simulink model that simulates shock sensor, export it in the required format and run it on the edge device using LiveTwin. The edge device can read data from PLC simulating vibrations via Simatic Flow Creator system application using S7 comunication protocol. The model can evaluate whether the vibrations have occurred and send the current shock status back to PLC. The data flow can be visualize by using Simatic Flow Creator application.
 
 
 <img src="docs/graphics/livetwin_task.PNG" width="400"/>
@@ -33,7 +33,7 @@ The main goal of this automation task is to create Simulink model that simulates
 - Onboarded Edge device on IEM
 - Installed system configurators
 - Installed system applications
-- Installed LiveTwin and Simatic Flow Creator application
+- Installed LiveTwin and Simatic Flow Creator applications
 - Edge device is connected to PLC 
 - TIA portal project downloaded to PLC ([TIA project](src/Shock_detection1500.zip))
 

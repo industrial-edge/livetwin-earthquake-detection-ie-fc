@@ -2,6 +2,7 @@
 
 
 - [LiveTwin application example](#livetwin-application-example)
+  - [Configure PLC project](#configure-plc-project)
   - [Export Simulink model](#export-simulink-model)
   - [Import the model to LiveTwin](#import-the-model-to-livetwin)
     - [Create template](#create-template)
@@ -9,6 +10,14 @@
   - [Simulation configuration](#simulation-configuration)
   - [Run simulation](#run-simulation)
 
+
+## Configure PLC project
+1) Open TIA portal and open the project: [TIA project](../src/Shock_detection1500.zip). 
+
+2) Download the PLC program to PLC (It is also possible to use PLCSIM advance).
+
+3) Feel free to simulate provided HMI (*/path*) to control the PLC program. 
+  
 
 
 ## Export Simulink model 
@@ -27,7 +36,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 
 ### Create template
-1) Open LiveTwin UI and go to the "LiveTwin studio" section located in the left main menu 
+1) Open LiveTwin UI and go to the "LiveTwin studio" section located in the left main menu.
 
 2) Go to the Libraries are and click on the "plus" button to add a template. New tab pop up in the working area. 
 
@@ -52,25 +61,29 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 6) Navigate to the "New Project" area and fill the following information:
   - Select your "Template"
-  - Select "FLow Creator" as a "Project Type"
+  - Select "Flow Creator" as a "Project Type"
   - Give the project a name 
-  - Choose "Simulation Step" and "Project Cyclic Time" based on your reguirement
+  - Choose "Simulation Step" and "Project Cyclic Time" based on your reguirements
 
 
 <img src="docs/graphics/new_project.PNG" width="700"/>
 
- *Note: The "inputs" names will be used in Flow Creator as inputs to "LiveTwin" node.*  
+ *Important Note!:*
+  - *Click on the "Model info" tab*
+  - *The "inputs" names will be used in Flow Creator as inputs to "LiveTwin" node.*  
+
+<img src="docs/graphics/model_info.PNG" width="500"/>
 
 7) Click "Save&Close". The new Flow Creator project is created. 
 
 
 ## Simulation configuration
-
-*Note: The flow.json file is available in the repository.*
+[TIA project](../src/Shock_detection1500.zip)
+*Note: The flow.json file is available in the repository.* 
 
 1) Go to the "Flow Creator" section of the main menu. The Flow Creator application opens. 
 
-2) Search for "LiveTwin" node, drag and drop it in the flow. 
+2) Import the flow available here: [Flow-Creator-Project](src/flows.json).
   
 3) Double Click on the "LiveTwin" node to configure it's properties. 
   - In the "Model" section, select your template
@@ -80,13 +93,13 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 4) Click "Done". 
 
-5) Now we need to read values from PLC (TIA project: [project](src/shock_sensor.zip)) and set them as inputs to LiveTwin node. To do that we have several options: 
+5) Now we need to read values from PLC and set them as inputs to LiveTwin node. To do that we have several options: 
   -  Recieve the data from databus using S7 connector system application
-  -  Recieve the data directly in Flow Creator using different protocols (see:  [connectivity](https://code.siemens.com/industrial-edge-sup/how-to-s/flowcreator-connectivity))
+  -  Recieve the data directly in Flow Creator using different protocols
   
  For this case we will recieve the data from PLC using S7 communication directly from Flow Creator using "S7 in" node. 
 
-6) Search for the "S7 in" node and drop it in the flow. Double click on the node.
+6) Search for the "S7 in" node in the flow. Double click on the node.
 
 7) In the "Properties" section click on the PLC configure button.
 
@@ -116,7 +129,7 @@ The syntax for the address of the variable contains the datablock, offset and da
 ## Run simulation
 
 1)To run the simulation follow these instructions:  
- - Make sure that PLC is connected to the Edge device and TIA project is downloaded ([TIA project](../src/Shock_detection1500.zip))
+ - Make sure that PLC is connected to the Edge device and TIA project is downloaded
  - Import the flow project to the Flow Creator application [Flow-Creator-Project](src/flows.json)
  - Configure the flow as instructed here: [Simulation configuration](simulation-configuration)
  - Deploy the Flow Creator application 
