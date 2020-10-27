@@ -72,13 +72,13 @@ The Simulink model for this use case is already in this repository: [Shock-senso
   - *Click on the "Model info" tab*
   - *The "inputs" names will be used in Flow Creator as inputs to "LiveTwin" node.*  
 
-<img src="docs/graphics/model_info.PNG" width="500"/>
+<img src="docs/graphics/model_info.PNG" width="600"/>
 
 7) Click "Save&Close". The new Flow Creator project is created. 
 
 
 ## Simulation configuration
-[TIA project](../src/Shock_detection1500.zip)
+
 *Note: The flow.json file is available in the repository.* 
 
 1) Go to the "Flow Creator" section of the main menu. The Flow Creator application opens. 
@@ -110,7 +110,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 <img src="docs/graphics/S7node_connection.PNG" width="500"/>
 
-9) Go to "Variables" section and define variables based on tags in TIA portal. Make sure that the name of the variables are the same as inputs of the simulink model. 
+9) Go to "Variables" section and define variables based on tags in TIA portal. Make sure that the name of the variables are the same as inputs of the simulink model (see: [variables](graphics/model_info.PNG)).
   
 <img src="docs/graphics/S7node_variables.PNG" width="500"/>
 
