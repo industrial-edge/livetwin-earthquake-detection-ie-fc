@@ -53,13 +53,13 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 ### Create Flow Creator project 
 
-5) Go to the "Projects" section in the "LiveTwin studio" menu and click on the "plus" button to add project. 
+1) Go to the "Projects" section in the "LiveTwin studio" menu and click on the "plus" button to add project. 
 
 <img src="docs/graphics/add_project.PNG" width="300"/>
 
 
 
-6) Navigate to the "New Project" area and fill the following information:
+2) Navigate to the "New Project" area and fill the following information:
   - Select your "Template"
   - Select "Flow Creator" as a "Project Type"
   - Give the project a name 
@@ -74,7 +74,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 <img src="docs/graphics/model_info.PNG" width="600"/>
 
-7) Click "Save&Close". The new Flow Creator project is created. 
+3) Click "Save&Close". The new Flow Creator project is created. 
 
 
 ## Simulation configuration
