@@ -6,7 +6,7 @@
   - [Export Simulink model](#export-simulink-model)
   - [Import the model to LiveTwin](#import-the-model-to-livetwin)
     - [Create template](#create-template)
-    - [Create Flow Creator project](#create-flow-creator-project)
+    - [Create Flow Creator project in LiveTwin](#create-flow-creator-project-in-livetwin)
   - [Simulation configuration](#simulation-configuration)
   - [Run simulation](#run-simulation)
 
@@ -43,13 +43,15 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 <img src="docs/graphics/plus_button.PNG" width="300"/>
 
 3) Navigate to the "New Template" area and fill the form: 
+  ```txt
   - Choose a "Name" for your template
   - Select the "Model Type" (in this case Simulink)
   - Browse in the"Model File" for the exported .zip file of the Simuling project. You can find it here: [livetwin template](src/shock_sensor.zip)
+  ```
 
 <img src="docs/graphics/new_template.PNG" width="600"/>
 
-4) Click "Save". The new template is generated. 
+1) Click "Save". The new template is generated. 
 
 ### Create Flow Creator project in LiveTwin
 
@@ -60,11 +62,12 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 
 2) Navigate to the "New Project" area and fill the following information:
+  ```txt
   - Select your "Template"
   - Select "Flow Creator" as a "Project Type"
   - Give the project a name 
   - Choose "Simulation Step" and "Project Cyclic Time" based on your reguirements
-
+  ```
 
 <img src="docs/graphics/new_project.PNG" width="700"/>
 
@@ -74,7 +77,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 <img src="docs/graphics/model_info.PNG" width="600"/>
 
-3) Click "Save&Close". The new Flow Creator project is created. 
+1) Click "Save&Close". The new Flow Creator project is created. 
 
 
 ## Simulation configuration
@@ -86,17 +89,21 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 2) Import the flow available here: [Flow-Creator-Project](src/flows.json).
   
 3) Double Click on the "LiveTwin" node to configure it's properties. 
+  ```txt
   - In the "Model" section, select your template
   - Adjust other properties based on your needs. For this case, you can leave idefault. 
+   ```
 
 <img src="docs/graphics/edit_livetwin_node.PNG" width="400"/>
 
 4) Click "Done". 
 
 5) Now we need to read values from PLC and set them as inputs to LiveTwin node. To do that we have several options: 
+  ```txt
   -  Recieve the data from databus using S7 connector system application
   -  Recieve the data directly in Flow Creator using different protocols
-  
+  ```
+
  For this case we will recieve the data from PLC using S7 communication directly from Flow Creator using "S7 in" node. 
 
 6) Search for the "S7 in" node in the flow. Double click on the node.
@@ -104,13 +111,15 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 7) In the "Properties" section click on the PLC configure button.
 
 8) In the "Connection" menu do the following steps: 
+  ```txt
   - Type IP adress of your PLC in the "Adress" section
   - Change "Rack" and "Slot" properties 
   - Configure "Cycle time" based on your needs
+  ```
 
 <img src="docs/graphics/S7node_connection.PNG" width="500"/>
 
-9) Go to "Variables" section and define variables based on tags in TIA portal. Make sure that the name of the variables are the same as inputs of the simulink model (see: [variables](graphics/model_info.PNG)).
+1) Go to "Variables" section and define variables based on tags in TIA portal. Make sure that the name of the variables are the same as inputs of the simulink model (see: [variables](graphics/model_info.PNG)).
   
 <img src="docs/graphics/S7node_variables.PNG" width="500"/>
 
