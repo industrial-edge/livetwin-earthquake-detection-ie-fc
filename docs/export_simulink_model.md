@@ -34,7 +34,7 @@ To export Simulink model and run it on edge device you have to follow these step
 <img src="docs/graphics/interface.PNG" width="600"/>
 
   - For Advanced parameters: 
-    - Disable "MAT-file logging"
+  - Disable "MAT-file logging"
 
 
 <img src="docs/graphics/interface_advanced.PNG" width="600"/>
