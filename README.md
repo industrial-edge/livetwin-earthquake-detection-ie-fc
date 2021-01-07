@@ -1,6 +1,6 @@
 # Simulating virtual sensor with LiveTwin
 
-Running a simulation model on the edge device using Siemens app LiveTwin. 
+Running a simulation model on the edge device using the Siemens app LiveTwin. 
 
 - [Simulating virtual sensor with LiveTwin](#simulating-virtual-sensor-with-livetwin)
   - [Description](#description)
@@ -18,10 +18,10 @@ Running a simulation model on the edge device using Siemens app LiveTwin.
 
 
 ###  Overview
-This application example shows how to export Simulink virtual sensor model and run it on a edge device with LiveTwin edge application. The model can read data from PLC and send the current status back to the PLC. 
+This application example shows how to export a Simulink virtual sensor model and run it on an Industrial Edge Device with the LiveTwin application. The model can read data from a PLC and send the current status back to the PLC. 
 
 ### General task
-The main goal of this automation task is to create Simulink model that simulates shock sensor, export it in the required format and run it on the edge device using LiveTwin. The edge device can read data from PLC simulating vibrations via Simatic Flow Creator system application using S7 comunication protocol. The model can evaluate whether the vibrations have occurred and send the current shock status back to PLC. The data flow can be visualize by using Simatic Flow Creator application.
+The main goal of this automation task is to create a Simulink model that simulates a shock sensor, export it to the required format and run it on the Industrial Edge Device using LiveTwin. The Industrial Edge Device can read data from the PLC simulating vibrations via  SIMATIC Flow Creator application using the S7 communication protocol. The model can evaluate whether the vibrations have occurred and send the current shock status back to the PLC. The data flow can be visualized by using the SIMATIC Flow Creator application.
 
 
 <img src="docs/graphics/livetwin_task.PNG" width="500"/>
@@ -30,12 +30,12 @@ The main goal of this automation task is to create Simulink model that simulates
 
 ###  Prerequisities
 
-- Onboarded Edge device on IEM
+- Onboarded Industrial Edge Device on IEM
 - Installed system configurators
-- Installed system applications
-- Installed LiveTwin and Simatic Flow Creator applications
-- Edge device is connected to PLC 
-- TIA portal project downloaded to PLC ([TIA project](src/Shock_detection1500.zip))
+- Installed Industrial Edge System Applications applications
+- Installed LiveTwin and SIMATIC Flow Creator applications
+- Industrial Edge Device is connected to the PLC 
+- TIA portal project downloaded to the PLC ([TIA project](src/Shock_detection1500.zip))
 
 
 ### Used components
@@ -44,7 +44,7 @@ The main goal of this automation task is to create Simulink model that simulates
 - PLC: CPU 1518
 - TIA Portal V16 
 - Matlab 2019b
-- Simatic Flow Creator V 1.0.4
+- SIMATIC Flow Creator V 1.0.4
 
 
 ## Installation steps
@@ -52,8 +52,8 @@ You can find the further information about the following steps in the [docs](doc
 - Export Simulink model 
 - Import the model to LiveTwin  
   - Create instance
-  - Create Flow Creator project
-- Configure the Flow Creator project properties
+  - Create SIMATIC Flow Creator project
+- Configure the SIMATIC Flow Creator project properties
 - Run the simulation 
   - Visualize the data 
   - Send shock status back to PLC

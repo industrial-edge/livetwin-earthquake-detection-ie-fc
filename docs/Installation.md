@@ -6,7 +6,7 @@
   - [Export Simulink model](#export-simulink-model)
   - [Import the model to LiveTwin](#import-the-model-to-livetwin)
     - [Create template](#create-template)
-    - [Create Flow Creator project in LiveTwin](#create-flow-creator-project-in-livetwin)
+    - [Create SIMATIC Flow Creator project in LiveTwin](#create-simatic-flow-creator-project-in-livetwin)
   - [Simulation configuration](#simulation-configuration)
   - [Run simulation](#run-simulation)
 
@@ -31,7 +31,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 ## Import the model to LiveTwin 
 
 *Prerequisities:*
- - *LiveTwin and Flow Creator applications are running on edge device*
+ - *LiveTwin and SIMATIC Flow Creator are running on the Industrial Edge Device*
 
 
 
@@ -53,7 +53,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 1) Click "Save". The new template is generated. 
 
-### Create Flow Creator project in LiveTwin
+### Create SIMATIC Flow Creator project in LiveTwin
 
 1) Go to the "Projects" section in the "LiveTwin studio" menu and click on the "plus" button to add project. 
 
@@ -100,11 +100,11 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 5) Now we need to read values from PLC and set them as inputs to LiveTwin node. To do that we have several options: 
   ```txt
-  -  Recieve the data from databus using S7 connector system application
-  -  Recieve the data directly in Flow Creator using different protocols
+  -  Recieve the data from databus using the SIMATIC S7 Connector system application
+  -  Recieve the data directly in SIMATIC Flow Creator using different protocols
   ```
 
- For this case we will recieve the data from PLC using S7 communication directly from Flow Creator using "S7 in" node. 
+ For this case we will recieve the data from PLC using S7 communication directly from SIMATIC Flow Creator using "S7 in" node. 
 
 6) Search for the "S7 in" node in the flow. Double click on the node.
 
@@ -139,12 +139,12 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 1)To run the simulation follow these instructions:  
  - Make sure that PLC is connected to the Edge device and TIA project is downloaded
- - Import the flow project to the Flow Creator application [Flow-Creator-Project](src/flows.json)
+ - Import the flow project into the SIMATIC Flow Creator application [Flow-Creator-Project](src/flows.json)
  - Configure the flow as instructed here: [Simulation configuration](simulation-configuration)
- - Deploy the Flow Creator application 
+ - Deploy the flow
  - Click on the trigger button of "LiveTwin" node to start the simulation
  - Enable vibrations on the PLC ("HMIHandleDB" -> "enableVib" -> "True")
- - Access the Flow Creator dashboard to see the results
+ - Access the SIMATIC Flow Creator dashboard to see the results
 
 
 
