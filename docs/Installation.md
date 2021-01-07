@@ -132,7 +132,7 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 <img src="docs/graphics/s7node.PNG" width="400"/>
 
-12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. You can also send current shock status back to PLC. The created flow is available in here: [Flow-Creator-Project](src/flows.json). 
+12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. You can also send current shock status back to PLC (HMIHandleDB -> resetShock). The created flow is available in here: [Flow-Creator-Project](src/flows.json). 
 
 
 ## Run simulation
