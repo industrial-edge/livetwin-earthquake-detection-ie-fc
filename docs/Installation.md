@@ -145,6 +145,7 @@ The syntax for the address of the variable contains the datablock, offset and da
  - Click on the trigger button of "LiveTwin" node to start the simulation
  - Enable vibrations on the PLC ("HMIHandleDB" -> "enableVib" -> "True")
  - Access the SIMATIC Flow Creator dashboard to see the results
+ - If the Flow Creator project was used, the shock status is send back to PLC. If a shock was detected, the value of the tag "HMIHandleDB" -> "resetShock" is set to 1.
 
 
 
