@@ -40,7 +40,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 2) Go to the Libraries are and click on the "plus" button to add a template. New tab pop up in the working area. 
 
-<img src="docs/graphics/plus_button.PNG" width="300"/>
+<img src="graphics/plus_button.PNG" width="300"/>
 
 3) Navigate to the "New Template" area and fill the form: 
   ```txt
@@ -49,7 +49,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
   - Browse in the"Model File" for the exported .zip file of the Simuling project. You can find it here: [livetwin template](src/shock_sensor.zip)
   ```
 
-<img src="docs/graphics/new_template.PNG" width="600"/>
+<img src="graphics/new_template.PNG" width="600"/>
 
 1) Click "Save". The new template is generated. 
 
@@ -57,7 +57,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 1) Go to the "Projects" section in the "LiveTwin studio" menu and click on the "plus" button to add project. 
 
-<img src="docs/graphics/add_project.PNG" width="300"/>
+<img src="graphics/add_project.PNG" width="300"/>
 
 
 
@@ -69,13 +69,13 @@ The Simulink model for this use case is already in this repository: [Shock-senso
   - Choose "Simulation Step" and "Project Cyclic Time" based on your reguirements
   ```
 
-<img src="docs/graphics/new_project.PNG" width="700"/>
+<img src="graphics/new_project.PNG" width="700"/>
 
  *Important Note!:*
   - *Click on the "Model info" tab*
   - *The "inputs" names will be used in Flow Creator as inputs to "LiveTwin" node.*  
 
-<img src="docs/graphics/model_info.PNG" width="600"/>
+<img src="graphics/model_info.PNG" width="600"/>
 
 1) Click "Save&Close". The new Flow Creator project is created. 
 
@@ -94,7 +94,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
   - Adjust other properties based on your needs. For this case, you can leave idefault. 
    ```
 
-<img src="docs/graphics/edit_livetwin_node.PNG" width="400"/>
+<img src="graphics/edit_livetwin_node.PNG" width="400"/>
 
 4) Click "Done". 
 
@@ -117,11 +117,11 @@ The Simulink model for this use case is already in this repository: [Shock-senso
   - Configure "Cycle time" based on your needs
   ```
 
-<img src="docs/graphics/S7node_connection.PNG" width="500"/>
+<img src="graphics/S7node_connection.PNG" width="500"/>
 
 1) Go to "Variables" section and define variables based on tags in TIA portal. Make sure that the name of the variables are the same as inputs of the simulink model (see: [variables](graphics/model_info.PNG)).
   
-<img src="docs/graphics/S7node_variables.PNG" width="500"/>
+<img src="graphics/S7node_variables.PNG" width="500"/>
 
 
 The syntax for the address of the variable contains the datablock, offset and data type. See the [documentation](https://www.npmjs.com/package/node-red-contrib-s7) for more information. 
@@ -130,7 +130,7 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 11) In the "Mode" section select "All variables" from the dropdown list and click "Done". 
 
-<img src="docs/graphics/s7node.PNG" width="400"/>
+<img src="graphics/s7node.PNG" width="400"/>
 
 12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. You can also send current shock status back to PLC (HMIHandleDB -> resetShock). The created flow is available in here: [Flow-Creator-Project](src/flows.json). 
 
@@ -149,8 +149,8 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 
 
-<img src="docs/graphics/flow.PNG" width="400"/>
-<img src="docs/graphics/dashboard.PNG" width="400"/>
+<img src="graphics/flow.PNG" width="400"/>
+<img src="graphics/dashboard.PNG" width="400"/>
 
 
 
