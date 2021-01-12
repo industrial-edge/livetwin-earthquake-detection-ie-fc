@@ -132,15 +132,15 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 <img src="graphics/s7node.PNG" width="400"/>
 
-12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. You can also send current shock status back to PLC (HMIHandleDB -> resetShock). The created flow is available in here: [Flow-Creator-Project](src/flows.json). 
+12) You can also add additional logic for preprocessing the data using "function" node and visualize the data using dashboard nodes. You can also send current shock status back to PLC (HMIHandleDB -> resetShock). The created flow is available in here: [Flow-Creator-Project](../src/flows.json). 
 
 
 ## Run simulation
 
 1)To run the simulation follow these instructions:  
  - Make sure that PLC is connected to the Edge device and TIA project is downloaded
- - Import the flow project into the SIMATIC Flow Creator application [Flow-Creator-Project](src/flows.json)
- - Configure the flow as instructed here: [Simulation configuration](simulation-configuration)
+ - Import the flow project into the SIMATIC Flow Creator application [Flow-Creator-Project](../src/flows.json)
+ - Configure the flow as instructed here: [Simulation configuration](#simulation-configuration)
  - Deploy the flow
  - Click on the trigger button of "LiveTwin" node to start the simulation
  - Enable vibrations on the PLC ("HMIHandleDB" -> "enableVib" -> "True")
