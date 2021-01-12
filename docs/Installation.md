@@ -149,7 +149,7 @@ The syntax for the address of the variable contains the datablock, offset and da
 
 
 
-<img src="graphics/flow.PNG" width="400"/> | <img src="graphics/dashboard.PNG" width="400"/>
+<img src="graphics/flow.PNG" width="600"/> <img src="graphics/dashboard.PNG" width="400"/>
 
                               
 
