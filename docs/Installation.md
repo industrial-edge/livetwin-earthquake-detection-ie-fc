@@ -86,7 +86,7 @@ The Simulink model for this use case is already in this repository: [Shock-senso
 
 1) Go to the "Flow Creator" section of the main menu. The Flow Creator application opens. 
 
-2) Import the flow available here: [Flow-Creator-Project](src/flows.json).
+2) Import the flow available here: [Flow-Creator-Project](../src/flows.json).
   
 3) Double Click on the "LiveTwin" node to configure it's properties. 
   ```txt
