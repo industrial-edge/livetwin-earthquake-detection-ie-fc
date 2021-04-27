@@ -40,7 +40,7 @@ The main goal of this automation task is to create a Simulink model that simulat
 
 ### Used components
 
-- Industrial Edge Device V 1.1.0-58
+- Industrial Edge Device V 1.2.0-56
 - PLC: CPU 1511
 - TIA Portal V16 
 - Matlab 2019b
