@@ -45,6 +45,8 @@ The main goal of this automation task is to create a Simulink model that simulat
 - TIA Portal V16 
 - Matlab 2019b
 - SIMATIC Flow Creator V 1.0.5
+- Livetwin V1.1.4
+
 
 
 ## Installation steps
